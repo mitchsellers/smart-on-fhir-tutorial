@@ -60,7 +60,6 @@
 	                           /*document.getElementById("deviceDiv").innerText = JSON.stringify(response);*/
 	                           //return;
 	                           var retStringDevices = "<table class='dataTable'>";
-	                           
 	                           response.forEach(function(allDevices,idx){
 	                                  retStringDevices +=
 	                                         "<tr>"+
@@ -70,9 +69,8 @@
 	                           });
 	                           retStringDevices += "</table>";
 	                           document.getElementById("deviceDiv").innerHTML = retStringDevices;
-	                     });
+	                  });
 	                     /*end device search*/
-
 			var lookbackDate = new Date();
 			lookbackDate.setMonth(lookbackDate.getMonth()-6);
 			var month = (lookbackDate.getMonth()+1 < 10)?"0"+(lookbackDate.getMonth()+1):lookbackDate.getMonth()+1;
